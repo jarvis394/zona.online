@@ -1,0 +1,17 @@
+{
+  "name": "zona.online",
+  "version": "1.0.0",
+  "description": "Zona for real mans",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "author": "jarvis394",
+  "license": "ISC",
+  "dependencies": {
+    "vk-io": "^4.0.0-rc.15"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
