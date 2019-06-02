@@ -4,14 +4,24 @@
   "description": "Zona for real mans",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "jest --verbose"
   },
   "author": "jarvis394",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.2",
+    "loglevel": "^1.6.2",
+    "loglevel-plugin-prefix": "^0.8.4",
+    "quick.db": "^7.0.0-b22",
     "vk-io": "^4.0.0-rc.15"
   },
   "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-google": "^0.12.0",
     "jest": "^24.1.0"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
