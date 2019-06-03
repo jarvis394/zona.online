@@ -14,6 +14,7 @@ npm start
 ### Configuring
 
 `process.env.TOKEN` = VK group's API token
+
 `process.env.ID` = VK group's ID
 
 ### Credits
