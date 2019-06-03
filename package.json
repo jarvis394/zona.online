@@ -1,20 +1,24 @@
 {
   "name": "zona.online",
   "version": "1.0.0",
-  "description": "Zona for real mans",
+  "description": "ZONA for real men",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node -r esm index.js",
     "test": "jest --verbose"
   },
   "author": "jarvis394",
   "license": "ISC",
   "dependencies": {
+    "@vk-io/scenes": "^0.0.0-alpha.2",
+    "@vk-io/session": "0.0.0-alpha.1",
     "chalk": "^2.4.2",
+    "esm": "^3.2.25",
+    "express": "^4.16.4",
     "loglevel": "^1.6.2",
     "loglevel-plugin-prefix": "^0.8.4",
     "quick.db": "^7.0.0-b22",
-    "vk-io": "^4.0.0-rc.15"
+    "vk-io": "^4.0.0-rc.17"
   },
   "devDependencies": {
     "eslint": "^5.14.0",
