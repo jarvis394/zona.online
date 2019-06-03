@@ -1,7 +1,7 @@
-const config = require('./config')
+import { TOKEN } from './config'
 import { VK, Keyboard } from 'vk-io'
 import { SessionManager } from '@vk-io/session'
-import { SceneManager, StepScene } from '@vk-io/scenes'
+import { SceneManager } from '@vk-io/scenes'
 import fs from 'fs'
 
 const vk = new VK()
@@ -10,7 +10,7 @@ const sessionManager = new SessionManager()
 const sceneManager = new SceneManager()
 
 vk.setOptions({
-  token: config.TOKEN,
+  token: TOKEN,
 })
 
 const chalk = require('chalk')
@@ -71,10 +71,7 @@ async function run() {
 }
 
 // Run
-run().catch((e) => {
-  log.error(e)
-})
-
+process.env.MODE !== 'DISABLED' && run().catch((e) => log.error(e))
 
 // Web
 import express from 'express'

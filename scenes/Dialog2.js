@@ -11,7 +11,7 @@ module.exports = new StepScene('dialog2', [
         [ 'Наклониться и подобрать', null, 'changeTrust=-0.1' ], 
         [ 'Вытереть ноги', null, 'changeTrust=0.15' ],
         [ 'Перешагнуть', null, 'changeTrust=-0.15'] ]
-      }).send(c)
+    }).send(c)
   },
   
   c => {
